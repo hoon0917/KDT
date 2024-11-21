@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 프로젝트 데모</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #2980b9;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        section {
+            flex: 3;
+            padding: 2rem;
+            background-color: #ecf0f1;
+        }
+        aside {
+            flex: 1;
+            background-color: #95a5a6;
+            padding: 1rem;
+            color: white;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .topic {
+            background-color: white;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI 프로젝트 데모</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#ml">머신러닝</a></li>
+            <li><a href="#dl">딥러닝</a></li>
+            <li><a href="#vi">비전딥러닝</a></li>
+            <li><a href="#nlp">자연어처리</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div id="ml" class="topic">
+                <h2>머신러닝</h2>
+                <p>머신러닝은 컴퓨터 시스템이 명시적인 프로그래밍 없이 경험을 통해 학습하고 개선할 수 있게 하는 인공지능의 한 분야입니다.</p>
+            </div>
+
+            <div id="dl" class="topic">
+                <h2>딥러닝</h2>
+                <p>딥러닝은 여러 층의 인공 신경망을 사용하여 데이터로부터 복잡한 패턴을 학습하는 머신러닝의 하위 분야입니다.</p>
+            </div>
+
+            <div id="vi" class="topic">
+                <h2>비전딥러닝</h2>
+                <p>비전딥러닝은 컴퓨터 비전 작업을 수행하기 위해 딥러닝 기술을 적용하는 분야로, 이미지 인식, 객체 검출 등에 사용됩니다.</p>
+            </div>
+
+            <div id="nlp" class="topic">
+                <h2>자연어처리</h2>
+                <p>자연어처리(NLP)는 컴퓨터가 인간의 언어를 이해, 해석, 생성할 수 있도록 하는 AI의 한 분야입니다.</p>
+            </div>
+        </section>
+        <aside>
+            <h3>최신 AI 트렌드</h3>
+            <ul>
+                <li>생성형 AI</li>
+                <li>강화학습</li>
+                <li>엣지 AI</li>
+                <li>설명 가능한 AI</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 AI 프로젝트 데모. All rights reserved.</p>
+    </footer>
+</body>
+</html>

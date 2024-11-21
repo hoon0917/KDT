@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="start_h1">이미지 태그 img</h1>
+    <!--img 태그 : 이미지를 브라우저 홤녀에 출력해주는 태그-->
+    <!--src 속성 : 브라우저 화면에 보여줄 이미지 링크/경로-->
+    <img src="maple.JPG" alt="존재하지 않는 이미지"></img><br>
+    <img src="./maple.JPG" alt="존재하지 않는 이미지"></img><br>
+
+    <!--이미지와 링크-->
+    <!--이미지 클릭시 연결된 링크로 들어가짐-->
+    <a href ="https://maplestoryworlds.nexon.com/ko/play/be146ee19f5247d18c13834ec29eef09/" target="_blank">
+        <img src='maple.jpg'><br>
+    </a>
+    <!--이미지와 HTML 파일 링크-->
+    <a href="./ex_list.html" target="_blank">
+        <img src="maple.jpg"><br>
+    </a>
+
+    <!--페이지의 처음으로 이동 링크 설정 => 내부 페이지 이동-->
+    <!--href="#id속성"-->
+    <a href="#start_h1">
+        <img src="up_arrow.jpg"><br>
+    </a>
+</body>
+</html>
