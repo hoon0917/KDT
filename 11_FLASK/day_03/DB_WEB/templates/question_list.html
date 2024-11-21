@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>질문 게시판</h1>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>날짜</th>
+        </tr>
+        {% if question_list %}
+        
+            {% for question in question_list %}
+            <tr>
+                <td>{{question.id}}</td>
+                <td><a href="http://127.0.0.1:5000/qdetail/{{question.id}}">{{question.subject}}</a></td>
+                <td>{{question.create_datae}}</td>
+            </tr>
+            {% endfor %}
+        {% else %}
+        <tr>
+            <td colspan="3">등록된 질문이 없습니다.</td>
+        </tr>
+        {% endif %}
+    </table>
+
+    {% if que21121stion_list %}
+        <ol>
+            {% for question in question_list %}
+                <li>{{question.subject}}</li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>질문이 없습니다.</p>
+    {% endif %}
+</body>
+</html>
